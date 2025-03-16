@@ -4,6 +4,10 @@
 :root {
     --primary-color: #0f1b4c;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -48,6 +52,7 @@ a {
 }
 .hero-wrap {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     position: relative;
     background-color: rgb(230, 240, 255);
@@ -81,13 +86,11 @@ a {
     margin-left: 18px;
     border-radius: 8px;
 }
-.hero {
-    margin-top: 130px;
-}
-.hero .info {
+
+.hero-wrap .info {
     width: 51%;
 }
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-family: Poppins;
     font-weight: 500;
     font-size: 1.8rem;
@@ -95,7 +98,7 @@ a {
     letter-spacing: 0.01em;
     color: #687690;
 }
-.hero .tile {
+.hero-wrap .tile {
     margin-top: 8px;
     font-family: Poppins;
     font-weight: 900;
@@ -103,7 +106,7 @@ a {
     line-height: 1.19;
     color: #000336;
 }
-.hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     font-family: Poppins;
     font-weight: 400;
@@ -111,7 +114,7 @@ a {
     line-height: 1.78;
     color: #5a6473;
 }
-.hero .hero-cta {
+.hero-wrap .hero-cta {
     min-width: 170px;
     margin-top: 40px;
 }
